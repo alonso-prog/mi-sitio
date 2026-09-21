@@ -6,11 +6,110 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Mi contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre mi</a></li>
+            </ul>
+    </nav>
     <h1>Contacto</h1>
         <p>Si deseas contactarte conmigo, te invito a completar el siguiente formulario</p>  
     <form>
-        <table>
+        <table border="2">
+            <tr>
+                <td>
+                    <label for="nombre">Nombre<img src="https://cdn-icons-png.flaticon.com/512/666/666201.png" alt="foto logo usuario" width="15"></label>
+                </td>
+                <td>
+                    <label for="apellido">Apellido<img src="https://cdn-icons-png.flaticon.com/512/666/666201.png" alt="foto logo usuario" width="15"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="nombre" placeholder="Ej: Luis" required>
+                </td>
+                <td>
+                    <input type="text" name="apellido" placeholder="Ej: Gonzalez" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="correo">Correo<img src="https://cdn-icons-png.flaticon.com/512/6244/6244710.png" alt="foto logo correo" width="16"></label>
+                </td>
+                <td>
+                    <label for="edad">Edad<img src="https://marketplace.canva.com/Q0qbY/MAFJGJQ0qbY/1/tl/canva-birthday-cake-with-candle-glyph-icon-MAFJGJQ0qbY.png" alt="foto logo edad" width="18"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" name="correo" placeholder="sucorreo@gmail.com" required>
+                </td>
+                <td>
+                    <input type="number" name="edad" placeholder="18" min="18" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telefono">Contacto<img src="https://marketplace.canva.com/bFYQ8/MAGfoebFYQ8/1/tl/canva-icono-de-tel%C3%A9fono-blanco-sobre-fondo-negro-MAGfoebFYQ8.png" alt="foto logo telefono" width="16"></label>
+                </td>
+                <td>
+                    <label for="ciudad">Ciudad<img src="https://cdn-icons-png.flaticon.com/512/93/93818.png" alt="foto logo ubicacion" width="17"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="tel" name="telefono" placeholder="+56 9 1111 2222">
+                </td>
+                <td>
+                    <select name="ciudad" required>
+                        <option value="punta-arenas">Punta Arenas</option>
+                        <option value="puerto-montt">Puerto Montt</option>
+                        <option value="santiago">Santiago</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="modalidad">Modalidad<img src="https://cdn-icons-png.flaticon.com/512/181/181627.png" alt="foto logo formulario" width="16"></label>
+                </td>
+                <td>
+                    <label for="asunto">Asunto<img src="https://cdn-icons-png.flaticon.com/512/0/859.png" alt="foto logo puntos" width="17"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="modalidad" required>
+                        <option value="presencial">Presencial</option>
+                        <option value="online">Online</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="asunto" required>
+                        <option value="consulta">Consulta</option>
+                        <option value="proyecto">Proyecto</option>
+                        <option value="trabajo">Trabajo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <label for="comentarios">Comentarios<img src="https://cdn-icons-png.flaticon.com/512/711/711739.png" alt="foto logo de comentarios" width="16"></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <textarea name="comentarios" cols="50" rows="3" placeholder="Escriba aqui su mensaje..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" value="enviar">Enviar</button>
 
+                </td>
+            </tr>
         </table>
     </form>
     
