@@ -2,5 +2,34 @@
 
 body {
     background-color: beige;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: arial sans-serif;
+    line-height: 1.5;
+    color: saddlebrown;
+}
+h1{
+    font-size: 35px;
+    color: black;
+}
+h2{
+    font-size: 28px;
+    color: black
+}
+.tarjeta{
+    background-color: lightyellow;
+}
+.tarjeta h3{
+    color: darkcyan;
+}
+nav a{
+    color: saddlebrown
+}
+nav a:hover, nav a:focus{
+    color: black;
+}
+nav a:active{
+    color: darkcyan;
+}
+input:focus, select:focus, textarea:focus{
+    border: 4px solid darkred;
+    outline: 2px solid salmon;
 }
